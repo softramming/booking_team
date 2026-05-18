@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=100%">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Profile page</title>
+		<style>
+			*{
+				margin:0;
+				font-family:sans-serif;
+				box-sizing:border-box;
+			}
+			body{
+				background: #f5f4fa;
+			}
+			.sub_parent{
+				max-width:800px;
+				width:100%;
+				margin:10px auto;
+				background: #E6E6FA;
+				display:block;
+				border-radius:12px;
+				padding:20px 60px;
+			}
+			.profile_pic{
+				background-color:#fff;
+				width:100px;
+				hight:100px;
+				border-radius: 50%;
+				border:1px solid #333;
+				padding: 40px;
+
+			}
+			.profile{
+				display:grid;
+				grid-template-columns: repeat(1, 1fr);
+				gap:10px;
+				margin: 20px;
+				border-radius: 12px;
+			}
+			.child{
+				margin:10px;
+				text-align: left;
+				padding:8px;
+				background-color: #fff;
+				border-radius: 12px;
+			}
+			.flex_1{
+				display:flex;
+				gap:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div class="sub_parent">
+				<div class="flex_1">
+					<div class="profile_pic">M</div>
+					<div class="profile" id="profile_name">Profile Name<h4 onclick="profile()">+change profile name</h4></div>
+				</div>
+				<div class="child"><i class="fa fa-key"></i>&nbsp Account</div>
+				<div class="child"><i class="fa fa-lock"></i>&nbsp Privacy and policy</div>
+				<div class="child"><i class="fa fa-handshake-o"></i>&nbsp Trems and services</div>
+				<div class="child"><i class="fa fa-book"></i>&nbsp Booking history</div>
+				<div class="child"><i class="fa fa-cogs"></i>&nbsp Setting</div>
+				<div class="child"><i class="fa fa-question-circle-o"></i>&nbsp FAQ</div>
+				<div class="child"><i class="fa fa-check"></i>&nbsp Testimonial</div>
+				<div class="child"><i class="fa fa-power-off"></i>&nbsp Log out</div>
+			</div>
+		</center>
+		<script>
+			/*let profilePic = document.getElementById("profilePic");
+			let upload = document.getElementById("upload");
+			let profile_name =document.getElementById("profile_name");
+
+			if upload.addEventListiener("change",function(){
+				let selectedImage = upload.files[0];
+			}else(selectedImage){
+				profilePic.src = URL.createObjectURL(selectedImage);
+		</script>
+	</body>
+</html>
