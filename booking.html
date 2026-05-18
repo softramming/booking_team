@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=100%"/>
+		<title></title>
+		<style>
+			*{
+				margin:0;
+				font-family:sans-serif;
+				box-sizing:border-box;
+			}
+			.body{
+				background:#e6e6fa;
+			}
+			.sub{
+				max-width:350px;
+				padding:20px;
+				margin:20px;
+				background:#fff;
+				border:1px solid #333;
+				border-radius:10px;
+			}
+			h3{
+				text-align:center;
+			}
+			.label{
+				float:left;
+			}
+			.input{
+				display:block;
+				width:100%;
+				padding:10px;
+				background:#e6e6fa;
+				border-radius:12px;
+				margin:15px 0;
+			}
+			.select{
+				display:block;
+				width:100%;
+				padding:10px;
+				background:#e6e6fa;
+				border-radius:12px;
+				margin:15px 0;
+			}
+			.button{
+				background: transparent;
+				color: #333;
+				border:0;
+				border-radius:12px;
+				padding:10px;
+				display:block;
+				width:50%;
+				border: 1px solid #333;
+			}
+			.button:hover{
+				cursor:pointer;
+				color:white;
+				background:#333;
+				border:1px solid #ccc;
+				transition:0.2s ease-in-out;
+			}
+		</style>
+	</head>
+	<body  class="body">
+		<center>
+			<div class="sub">
+				<h3>BOOKING</h3>
+				<br />
+					<label for="Fullname" class="label">Fullname</label>
+					<input class="input" type="text" placeholder="Enter your Fullname"/>
+					<label for="Email" class="label">Email</label>
+					<input class="input" type="Email" placeholder="Enter your email"/>
+					<label for="Phone Number" class="label">Phone Number</label>
+					<input class="input" type="Number" placeholder="Enter your Phone Number"/>
+					<label for="Appointment" class="label">Appointment</label>
+					<input class="input" type="Date" placeholder="Chose your Appointment date"/>
+					<label for="Service" class="label">Service</label>
+					<select class="select">
+						<option>Hair Making</option>
+						<option>Facials</option>
+						<option>Pedicure</option>
+						<option>Manicure</option>
+						<option>Full body maintainace</option>
+					</select>
+				<br />
+					<button class="button">Book Now</button>
+			</div>
+		</center>
+	</body>
+</html>
