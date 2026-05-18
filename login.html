@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			font-family: cursive;
+			box-sizing: border-box;
+		}
+.form{
+	width:400px;
+	background: #E6E6Fa;
+	padding: 20px;
+	border:1px solid #ccc;
+}
+.label{
+	float:left;
+}
+.input{
+	display: block;
+	width: 100%;
+	padding: 10px 0px;
+	background: #fff;
+	border-radius: 12px;
+	margin: 20px 0;
+	
+}
+button{
+	width:60%;
+	padding:10px;
+	background: #333;
+	border-radius: 12px;
+	border: 0;
+	display: block;	
+	color: #fff;
+	margin: 10px 0;
+}
+.button:hover{
+	color: white;
+	cursor: pointer;
+	border:1px solid white;
+	transition: 5s ease-in-out;
+}
+		
+	</style>
+</head>
+<body>
+	<center>
+		<div>
+			<div class="form">
+				<h3>LOGIN</h3>
+				<br>
+				<label class="label" for="username">USERNAME</label>
+				<input class="input" type="username" id="user" placeholder=" enter your username">
+				<label class="label" for="password">PASSWORD</label>
+				<input class="input" type= 'password'id="secure" placeholder=" enter your password">
+				<input type="checkbox" id="pass_show"> <label id="pass_name">show password</label>
+				<button class="button" onclick="validate_form()">LOGIN</button>
+			</div>
+		</div>
+	</center>
+
+
+</body>
+</html>

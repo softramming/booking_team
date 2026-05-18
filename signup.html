@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+	margin: 0;
+	font-family: cursive;
+	box-sizing: border-box;
+}
+.form{
+	width:50%;
+	background: #E6E6Fa;
+	padding: 20px;
+	margin: 20px;
+	border:1px solid #ccc;
+}
+.label{
+	float:left;
+}
+.input{
+	width:100%;
+	display:block;
+	padding:10px;
+	margin:15px 0;
+	border-radius: 10px;
+
+}
+button{
+	width:40%;
+	background: #333;
+	color: #fff;
+	border-radius: 12px;
+	padding: 10px;
+	display: block;
+	border: 0;
+	font-size: 15px;
+}
+	</style>
+</head>
+<body>
+	<center>
+	  <div class="form">
+	  	<h3>SIGNUP</h3>
+				<br>
+		<label class = "label" for="Firstname">Fullname</label>
+		<input class = "input" type="text" id="fullname" placeholder="Enter your Fullname"></label>
+		<label class = "label" for="Email">Email Address</label>
+		<input class=  "input" type="Email" id="email" placeholder="Enter your Email address">
+		<label class = "label" for="password">password</label>
+		<input class = "input" type="password" id="password" placeholder="Enter your password">
+		<label class = "label" for="confirm password">confirm password</label>
+		<input class = "input" type="confirm password" id="confirm_password" placeholder="re-enter your password"><br /><br />
+		<button class="button" type="Signup" onclick="validate_form()">Signup</button>
+		<label class="label" for="Got an account">Got an account? <a href="LOGIN.HTML"> Login </a></label>
+	</div>
+	</center>
+	<script>
+		let fullname = document.getElementById("fullname");
+		let email = document.getElementById("email");
+		let password = document.getElementById("password");
+		let confirm_password = document.getElementById("confirm_password");
+
+		function validate_form(){
+			if(fullname.value ==""){
+				alert("fullname is required");
+			}else if(email.value==""){
+				alert("Email is required");
+			}else if(password.value==""){
+				alert("password is required");
+			}else if(confirm_password.value==""){
+				alert("confirm password is required");
+
+			}else{
+				alert("Successfull! proceed to login");
+				window.location.href = "login.html";	
+			}
+			
+	} 
+	</script>
+</body>
+</html>
