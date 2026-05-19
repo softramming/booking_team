@@ -13,7 +13,7 @@
 .form{
 	width:50%;
 	background: #E6E6Fa;
-	padding: 20px;
+	padding: 40px;
 	margin: 20px;
 	border:1px solid #ccc;
 }
@@ -28,7 +28,7 @@
 	border-radius: 10px;
 
 }
-button{
+.button{
 	width:40%;
 	background: #333;
 	color: #fff;
@@ -38,9 +38,122 @@ button{
 	border: 0;
 	font-size: 15px;
 }
+		.desk_view{
+			padding: 20px;
+			background: #fff;
+			border-bottom: 1px solid #ccc;
+		}
+		body{
+			background: #f5f6fa;
+		}
+		.logo{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			padding: 15px;
+			border-radius: 50%;
+			background:linear-gradient(45deg,#333,#E6E6FA);
+			color: #FFF;
+		}
+		.middle{
+			position:absolute;
+			top: 50px;
+			left:50%;
+			transform: translate(-50%,-50%) ;
+		}
+		.button_right{
+			position: absolute;
+			right: 20px;
+			top: 30px;
+		}
+		.middle a{
+			text-decoration: none;
+			color: #333;
+			padding: 0 10px;
+		}
+		.signup{
+			background: transparent;
+			border: 0;
+			color: #333;
+		}
+		.login{
+			padding: 10px;
+			border: 0;
+			background: #333;
+			color: #fff;
+		}
+		.bottom_nav{
+			display: none;
+		}
+		@media screen and (max-width: 800px){
+			.middle{
+				display: none;
+			}
+			.bottom_nav{
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				position: fixed;
+				bottom: 0;
+				background: #fff;
+				border-top: 1px solid #ccc;
+				width: 100%;
+				padding: 20px;
+			}
+			.nav_link a{
+				color: #333;
+				text-decoration: none;
+			}
+			.nav_link{
+				text-align: center;
+			}
+		}
 	</style>
 </head>
 <body>
+	<div class="desk_view">
+	<div class="logo">
+		AB
+	</div>
+	<div class="middle">
+		<a href="#">HOME</a>
+		<a href="#">MAIN</a>
+		<a href="#">BOOKING</a>
+		<a href="#">CONTACT</a>
+	</div>
+	<div class="button_right">
+		<button class="login">LOGIN</button>
+		<button class="signup">SIGNUP</button>
+	</div>
+</div>
+<div class="bottom_nav">
+
+	<div class="nav_link"><a href="">
+		<i class="fa fa-home"></i>
+		<p> HOME</p>
+	</a>
+</div>
+<div class="nav_link"><a href="#">
+	<i class="fa fa-th-large"></i>
+	<p> MENU </p>
+</a>
+</div>
+<div class="nav_link"><a href="#">
+	<i class="fa fa-edit"></i>
+	<p> BOOKING </p>
+</a>
+</div>
+<div class="nav_link"><a href="#">
+	<i class="fa fa-envelope"></i>
+	<p> CONTACT </p>
+</a>
+</div>
+
+
+
+	</div>
+
 	<center>
 	  <div class="form">
 	  	<h3>SIGNUP</h3>
@@ -52,7 +165,7 @@ button{
 		<label class = "label" for="password">password</label>
 		<input class = "input" type="password" id="password" placeholder="Enter your password">
 		<label class = "label" for="confirm password">confirm password</label>
-		<input class = "input" type="confirm password" id="confirm_password" placeholder="re-enter your password"><br /><br />
+		<input class = "input" type="confirm password" id="confirm_password" placeholder="re-enter your password">
 		<button class="button" type="Signup" onclick="validate_form()">Signup</button>
 		<label class="label" for="Got an account">Got an account? <a href="LOGIN.HTML"> Login </a></label>
 	</div>
