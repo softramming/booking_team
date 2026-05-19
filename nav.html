@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,intial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title> </title>
+		<style>
+			*{
+				margin: 0;
+				font-family: sans-serif;
+				box-sizing: border-box;
+			}
+			.desk_view{
+			padding: 20px;
+			background: #fff;
+			border-bottom: 1px #solid;	
+			}
+			body{
+				background: #f5f6fa;
+			}
+			.logo{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 50px;
+				width: 50px;
+				padding: 20px;
+				border-radius: 50%;
+				background: linear-gradient(45deg,#333,#E6E6FA);
+				color: #fff;
+			}
+			.middle{
+				position: absolute;
+				top: 45px;
+				left: 50%;
+				transform: translate(-50%,-50%);
+
+			}
+			.button_right{
+				position: absolute;
+				right: 20px;
+				top: 30px;
+
+			}
+			.middle a{
+				text-decoration: none ;
+				color: #333;
+				padding: 0 10px;
+			}
+			.signup{
+				background: transparent;
+				border: 0;
+				color: #333;
+
+			}
+			.login{
+				background: #333;
+				color: #fff;
+				border: 0;
+				padding: 5px;
+			}
+			.bottom_nav{
+				display: none;
+
+			}
+			@media screen and (max-width: 800px){
+				.middle{
+					display: none;
+				}
+				.bottom_nav{
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					position: absolute;
+					bottom: 0;
+					background: #fff;
+					border-top: 1px solid #ccc;
+					width: 100%;
+					padding: 20px;}
+				}
+				.nav_link a{
+					color: #333;
+					text-decoration: none;
+				
+				}
+				.nav_link{
+					text-align: center;
+
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="desk_view">
+			<div class="logo">
+				AB
+			</div>
+			<div class="middle">
+				<a href="#"> HOME</a>
+				<a href="#"> MENU</a>
+				<a href="#"> BOOKING</a>
+				<a href="#"> CONTACT</a>
+			</div>
+			<div class="button_right">
+				<button class="login"> LOGIN </button>
+				<button class="signup"> SIGNUP </button>
+			</div>
+		</div>
+
+		<div class="bottom_nav">
+			<div class="nav_link">
+				<a href="#"> 
+					<i class="fa fa-home"></i>
+					<p> HOME </p>
+				</a>
+			</div>
+
+			<div class="nav_link">
+				<a href="#"> 
+					<i class="fa fa-th-large"></i>    
+					<p> MENU </p>
+				</a>
+			</div>
+
+			<div class="nav_link">
+				<a href="#"> 
+					<i class="fa fa-edit"></i>
+					<p> BOOKING </p>
+				</a>
+			</div>
+
+			<div class="nav_link">
+				<a href="#"> 
+					<i class="fa fa-envelope"></i>
+					<p> CONTACT </p>
+				</a>
+			</div>
+		</div>
+		  
+	</body>
+</html>
